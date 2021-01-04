@@ -1,0 +1,62 @@
+.dark {
+    background: #1b1b1b !important;
+
+    h1 {
+        color: $white !important;
+    }
+
+    h2 {
+        color: $white !important;
+    }
+
+    .bg-session::before {
+        background: #171717;
+    }
+
+    .main-content-center h2 {
+       color: #3b3b3b !important;
+    }
+
+    .main-content-center h3 {
+        color: $white !important;
+    }
+
+    .main-content-center p {
+        color: #7B7E80 !important;
+    }
+
+    .title-session::before {
+       color: #3b3b3b !important;
+    }
+
+    .subtitle-session {
+        color: $white !important;
+    }
+
+    p {
+        color: $white !important;
+    }
+
+    .stacks-item {
+        &:not(:nth-child(7)) {
+            svg path {
+                fill: $pink !important;
+            }
+        }
+        &:nth-child(7) {
+            & path:not(:nth-child(4)) {
+                fill: $pink !important;
+            }
+            & path:nth-child(4) {
+                fill: #1b1b1b !important;
+            }
+        }
+        h4 {
+            color: $white !important;
+        }
+    }
+
+    footer {
+        background: #171717;
+    }
+}

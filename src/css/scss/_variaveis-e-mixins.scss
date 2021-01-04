@@ -1,0 +1,72 @@
+// COLORS
+$primary-color: #efefef;
+$second-color: #151515;
+$pink: #ed145d;
+$gray: #7b7e80;
+$gray-dark: #3c3c3c;
+$gray-title: #c1c1c1;
+$gray-session: #dedede;
+$white: #fff;
+
+// FONTS
+$font-1: 'Poppins', sans-serif;
+
+// TYPOGRAPHY
+@function em($pixel, $context: 16) {
+  @return $pixel / $context + em;
+}
+
+@mixin type-1($size) {
+  // Poppins
+  font-family: $font-1;
+  @if $size == 12 {
+    font-size: em(12);
+    line-height: em(18, 12);
+  }
+
+  @if $size == 14 {
+    font-size: em(14);
+    line-height: em(20, 14);
+  }
+
+  @if $size == 16 {
+    font-size: em(16);
+    font-weight: 500;
+  }
+
+  @if $size == 28 {
+    color: $second-color;
+    font-size: em(28);
+    line-height: em(38, 28);
+    @include device(xs) {
+      font-size: em(20);
+    }
+  }
+
+  @if $size == 40 {
+    font-weight: 600;
+    font-size: em(40);
+    line-height: em(40, 40);
+  }
+
+  @if $size == 60 {
+    font-size: em(60);
+    font-weight: 900 !important;
+    letter-spacing: -1px;
+    line-height: em(63, 60);
+  }
+
+  @if $size == 65 {
+    // Talvez não irá precisar utilizar
+    font-size: em(65);
+    line-height: em(38, 65);
+  }
+
+  @if $size == 130 {
+    color: $gray-title;
+    font-size: em(130);
+    font-weight: 600;
+    letter-spacing: 8px;
+    line-height: em(92, 130);
+  }
+}

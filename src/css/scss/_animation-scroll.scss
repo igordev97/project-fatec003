@@ -1,0 +1,40 @@
+.section-animation {
+    opacity: 0;
+
+    &.active {
+        animation: animaSection 1s forwards;
+
+        .title-session {
+            &::before {
+                animation: toLeft forwards 2s;
+            }
+        }  
+    }
+    &.portfolio.active {
+        .title-session {
+            &::before {
+                animation: toRight forwards 2s;
+            }
+        }  
+    }
+    &.proposal.active {
+        .title-session {
+            &::before {
+                animation: toRight forwards 2s;
+            }
+        }  
+    }
+
+}
+
+@keyframes animaSection {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

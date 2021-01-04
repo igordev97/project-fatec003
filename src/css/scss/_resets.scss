@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: .4s;
+
+}
+
+body, 
+section {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
